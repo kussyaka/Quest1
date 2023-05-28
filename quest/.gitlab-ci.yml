@@ -27,4 +27,4 @@ deploy-job:
     - sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no kus@192.168.0.31 " mkdir $CI_JOB_ID && cd $CI_JOB_ID && git clone ssh://git@192.168.0.31:5012/gitlab-instance-ccf8425a/quest.git"
     - sshpass ssh kus@192.168.0.31 "cd $CI_JOB_ID/quest && sudo pip install ."
     - sshpass ssh kus@192.168.0.31 "topydo -v"
-    - echo fucking done!
+    
